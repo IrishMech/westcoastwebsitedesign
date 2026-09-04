@@ -1682,3 +1682,79 @@ footer {
     }
 
 }
+
+
+/* ========================================
+   LEGAL PAGES
+========================================= */
+
+.legal-page {
+    padding: 150px 0 100px;
+    background: #f7f5f0;
+}
+
+.legal-container {
+    max-width: 850px;
+}
+
+.legal-page h1 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    line-height: 1;
+    margin: 15px 0 20px;
+}
+
+.legal-updated {
+    margin-bottom: 50px;
+    font-size: 0.9rem;
+    opacity: 0.65;
+}
+
+.legal-page h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.75rem;
+    margin-top: 45px;
+    margin-bottom: 15px;
+}
+
+.legal-page p,
+.legal-page li {
+    line-height: 1.8;
+}
+
+.legal-page ul {
+    margin: 20px 0;
+    padding-left: 25px;
+}
+
+.legal-page li {
+    margin-bottom: 8px;
+}
+
+.legal-page a:not(.button) {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.legal-back {
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+
+    .legal-page {
+        padding: 120px 0 70px;
+    }
+
+    .legal-page h1 {
+        font-size: 3rem;
+    }
+
+    .legal-page h2 {
+        font-size: 1.5rem;
+    }
+
+}
