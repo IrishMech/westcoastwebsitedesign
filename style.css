@@ -1758,3 +1758,181 @@ footer {
     }
 
 }
+
+
+/* ========================================
+   PORTFOLIO CONCEPT PHOTOGRAPHY
+========================================= */
+
+.concept-photo-wrapper {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.concept-photo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.concept-photo-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(10, 10, 10, 0.88) 0%,
+            rgba(10, 10, 10, 0.66) 45%,
+            rgba(10, 10, 10, 0.25) 100%
+        );
+}
+
+.concept-photo-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* ----------------------------------------
+   ROOFING CONCEPT
+----------------------------------------- */
+
+.roofing-concept-photo {
+    object-position: center center;
+}
+
+.roofing-preview-hero {
+    min-height: 430px;
+}
+
+.roofing-preview-hero .roofing-main,
+.roofing-preview-hero .roofing-feature-panel {
+    position: relative;
+    z-index: 2;
+}
+
+.roofing-preview-hero .roofing-main {
+    color: #ffffff;
+}
+
+.roofing-preview-hero .roofing-main p {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.roofing-preview-hero .roofing-kicker {
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.roofing-preview-hero .review-proof {
+    color: #ffffff;
+}
+
+
+/* ----------------------------------------
+   AUTO DETAIL CONCEPT
+----------------------------------------- */
+
+.auto-concept-photo {
+    object-position: center center;
+}
+
+.auto-photo-overlay {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.90) 0%,
+            rgba(0, 0, 0, 0.64) 48%,
+            rgba(0, 0, 0, 0.36) 100%
+        );
+}
+
+.auto-preview-hero {
+    min-height: 470px;
+}
+
+.auto-preview-hero .auto-glow,
+.auto-preview-hero .auto-large-type,
+.auto-preview-hero .auto-preview-copy,
+.auto-preview-hero .auto-package,
+.auto-preview-hero .auto-line {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* ----------------------------------------
+   LANDSCAPING CONCEPT
+----------------------------------------- */
+
+.landscape-concept-photo {
+    object-position: center center;
+}
+
+.landscape-photo-overlay {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(19, 37, 24, 0.90) 0%,
+            rgba(19, 37, 24, 0.68) 48%,
+            rgba(19, 37, 24, 0.34) 100%
+        );
+}
+
+.landscape-preview-body {
+    min-height: 430px;
+}
+
+.landscape-preview-body .landscape-preview-copy,
+.landscape-preview-body .landscape-service-cards {
+    position: relative;
+    z-index: 2;
+}
+
+.landscape-preview-body .landscape-preview-copy,
+.landscape-preview-body .landscape-preview-copy p {
+    color: #ffffff;
+}
+
+
+/* ----------------------------------------
+   MOBILE PORTFOLIO PHOTOGRAPHY
+----------------------------------------- */
+
+@media (max-width: 768px) {
+
+    .roofing-preview-hero,
+    .auto-preview-hero,
+    .landscape-preview-body {
+        min-height: 520px;
+    }
+
+    .concept-photo-overlay,
+    .auto-photo-overlay,
+    .landscape-photo-overlay {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(0, 0, 0, 0.76) 0%,
+                rgba(0, 0, 0, 0.62) 55%,
+                rgba(0, 0, 0, 0.76) 100%
+            );
+    }
+
+    .roofing-concept-photo {
+        object-position: center center;
+    }
+
+    .auto-concept-photo {
+        object-position: 58% center;
+    }
+
+    .landscape-concept-photo {
+        object-position: 46% center;
+    }
+
+}
